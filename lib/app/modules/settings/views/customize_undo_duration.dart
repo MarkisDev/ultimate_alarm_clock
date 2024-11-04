@@ -91,11 +91,12 @@ class CustomizeUndoDuration extends StatelessWidget{
               padding: EdgeInsets.only(left: 10, right: 10),
               child: ListTile(
                 tileColor: themeController.secondaryBackgroundColor.value,
+                contentPadding: const EdgeInsets.only(left: 22),
                 title: Text(
                   'Undo Duration'.tr,
                   style: TextStyle(
                     color: themeController.primaryTextColor.value,
-                    fontSize: 15
+                    fontSize: 14
                   ),
                 ),
                 trailing: Wrap(
