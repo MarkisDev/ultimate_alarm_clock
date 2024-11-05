@@ -104,7 +104,7 @@ class CustomizeUndoDuration extends StatelessWidget{
                   children: [
                     Obx(
                           () => Text(
-                        '${homeController.duration.value.round().toInt()} seconds',
+                        '${homeController.duration.value.round().toInt()} sec',
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: themeController.primaryTextColor.value,
                             fontSize: 13
