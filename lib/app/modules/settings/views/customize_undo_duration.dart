@@ -111,9 +111,12 @@ class CustomizeUndoDuration extends StatelessWidget{
                         ),
                       ),
                     ),
-                    Icon(
-                      Icons.chevron_right,
-                      color: themeController.primaryDisabledTextColor.value,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: Icon(
+                        Icons.chevron_right,
+                        color: themeController.primaryDisabledTextColor.value,
+                      ),
                     ),
                   ],
                 ),
