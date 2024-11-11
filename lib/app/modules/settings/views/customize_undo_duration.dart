@@ -88,14 +88,15 @@ class CustomizeUndoDuration extends StatelessWidget{
           ),
           child: Center(
             child: Padding(
-              padding: EdgeInsets.only(left: 10, right: 10),
+              padding: const EdgeInsets.only(left: 10, right: 10),
               child: ListTile(
                 tileColor: themeController.secondaryBackgroundColor.value,
+                contentPadding: const EdgeInsets.only(left: 22),
                 title: Text(
                   'Undo Duration'.tr,
                   style: TextStyle(
                     color: themeController.primaryTextColor.value,
-                    fontSize: 15
+                    fontSize: 14
                   ),
                 ),
                 trailing: Wrap(
@@ -103,16 +104,19 @@ class CustomizeUndoDuration extends StatelessWidget{
                   children: [
                     Obx(
                           () => Text(
-                        '${homeController.duration.value.round().toInt()} seconds',
+                        '${homeController.duration.value.round().toInt()} sec',
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: themeController.primaryTextColor.value,
                             fontSize: 13
                         ),
                       ),
                     ),
-                    Icon(
-                      Icons.chevron_right,
-                      color: themeController.primaryDisabledTextColor.value,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: Icon(
+                        Icons.chevron_right,
+                        color: themeController.primaryDisabledTextColor.value,
+                      ),
                     ),
                   ],
                 ),
